@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head lang="pt-BR">
+    <meta charset="utf-8" />
+    <title>Simulador de financiamento</title>
+    <meta name="viewport" content="width=device-width, inicial-scale=1" />
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <main>
+        <h1 class="conteudo">Simule aqui o seu financiamento</h1>
+        <form class="conteudo">
+            <div class="coluna">
+                <label for="valor">Valor: </label></br />
+                <input id="valor" type="number" placeholder="Quanto quer financiar?" />
+            </div>
+            <div class="coluna">
+                <label for="prazo">Prazo (anos): </label></br />
+                <input id="prazo" type="number" placeholder="Em quantos anos quer pagar?" />
+            </div>
+            <div class="coluna">
+                <label for="jurosaa">Juros ao ano: </label></br />
+                <input id="jurosaa" type="number" placeholder="Digite o juro anual" />
+            </div>
+        </form>
+        <div class="conteudo"><button onclick="simular()">Simular</button></div>
+        
+        <h2 class="conteudo">Resultado</h2>
+        <form class="conteudo">
+            <div class="coluna">
+                <label for="prestacoes">Prazo (meses): </label></br />
+                <input id="prestacoes" type="number" readonly />
+            </div>
+            <div class="coluna">
+                <label for="jurosam">Juros ao mês: </label></br />
+                <input id="jurosam" type="number" readonly />
+            </div>
+            <div class="coluna">
+                <label for="jurostotal">Juros acumulados: </label></br />
+                <input id="jurostotal" type="number" readonly />
+            </div>
+        </form> 
+            <table>
+                <thead>
+                    <tr>
+                        <th>Prestação</th>
+                        <th>Amortização</th>
+                        <th>Juros</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="simulador.js"></script>
+  </body>
+</html>
